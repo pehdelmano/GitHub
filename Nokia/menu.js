@@ -1,4 +1,5 @@
 var vezes_form=0;
+var cartao;
 
 function AbreMenu(){
 if($("#menu_content").css("display") == "none"){
@@ -78,6 +79,12 @@ $(function(){
 		} else{
 		$("#texto_produto").html('Todos os acessórios');
 		}
+	  });
+	
+	$('.cartao').click(function() {
+		$('.cartao_ativo').removeClass('cartao_ativo');
+		$(this).addClass('cartao_ativo');
+		cartao = $(this).attr('id');
 	  });
 
  });

@@ -383,7 +383,7 @@ padding-top:16px;
  }
  .text{
  border-radius: 0.3em; 
- padding:2px;
+ padding:5px 2px 5px 2px;
  border:1px solid #8f8f8f;
  width:270px;
  margin-left:auto;
@@ -397,3 +397,40 @@ padding-top:16px;
  padding-bottom:5px;
  width:100%;
  }
+ .item_lista{
+float:left;
+margin-right:10px;
+margin-left:10px;
+margin-bottom:10px;
+}
+.caixa{
+width:100%;
+border-top: 1px solid #848484;
+}
+.bloco{
+width:129px;
+float:left;
+text-align:center;
+padding:10px 10px 10px 10px;
+}
+.impar{
+border-left: 1px solid #848484;
+padding-left:30px;
+width:109px;
+}
+.cartao{
+float:left;
+margin-right:10px;
+}
+.cartoes{
+text-align:center;
+padding-top: 10px;
+margin-bottom: 45px;
+margin-left: 25px;	
+}
+ .texto_cinza{
+ color:#5b5b5b;
+ }
+ .cartao_ativo{
+border:solid 2px #007c00;
+}

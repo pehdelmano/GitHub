@@ -54,11 +54,52 @@
 			<input type="text" name="estado" class="text" placeholder="Estado" style="margin-bottom:10px"/>
 			</div>
 			<div id="form_pagamento" style="display:none">
-			<input type="text" name="nome" class="text" placeholder="Nome"/>
-			<input type="text" name="sobrenome" class="text" placeholder="Sobrenome"/>
-			<input type="text" name="cpf" class="text" placeholder="CPF"/>
-			<input type="text" name="telefone" class="text" placeholder="Telefone"/>
-			<input type="text" name="email" class="text" placeholder="Email" style="margin-bottom:10px"/>
+			<div class="preto tam_12 negrito">Escolha uma forma de pagamento</div>
+			<div class="cartoes"><img src="images/mastercard.png" class="cartao" id="master"/><img src="images/visa.png" class="cartao" id="visa"/><img src="images/diners.png" class="cartao" id="diners"/><img src="images/american.png" class="cartao" id="american"/></div>
+			<div class="clear"></div>
+			<input type="text" name="nome_titular" class="text" placeholder="Nome do titular (como escrito no cartão)*"/>
+			<input type="text" name="numero_cartao" class="text" placeholder="Número do cartão*"/>
+			<div class="texto_cinza tam_12 negrito" style="padding-top:8px;padding-bottom:8px;float:left;">Validade</div>
+			<select name="ano" class="tam_12 negrito select" style="margin-top: 8px;margin-right:4px;">
+				  <option value="none">ano</option>
+				  <option value="1">2013</option>
+				  <option value="2">2014</option>
+				  <option value="3">2015</option>
+				  <option value="4">2016</option>
+				  <option value="5">2017</option>
+				  <option value="6">2018</option>
+			</select>
+			<select name="ano" class="tam_12 negrito select" style="margin-top: 8px;margin-right:10px;">
+				  <option value="none">mês</option>
+				  <option value="1">01</option>
+				  <option value="2">02</option>
+				  <option value="3">03</option>
+				  <option value="4">04</option>
+				  <option value="5">05</option>
+				  <option value="6">06</option>
+				  <option value="7">07</option>
+				  <option value="8">08</option>
+				  <option value="9">09</option>
+				  <option value="10">10</option>
+				  <option value="11">11</option>
+				  <option value="12">12</option>
+			</select>
+			<input type="text" name="codigo" class="text" placeholder="Código de segurança"/>
+			<div class="texto_cinza tam_12 negrito" style="padding-top:8px;padding-bottom:8px;float:left;">Parcelas</div>
+			<select name="ano" class="tam_12 negrito select" style="margin-top: 8px;margin-right:4px;">
+				  <option value="1">1 x de R$ 699,00</option>
+				  <option value="2">2 x de R$ 699,00</option>
+				  <option value="3">3 x de R$ 699,00</option>
+				  <option value="4">4 x de R$ 699,00</option>
+				  <option value="5">5 x de R$ 699,00</option>
+				  <option value="6">6 x de R$ 699,00</option>
+				   <option value="7">7 x de R$ 699,00</option>
+				  <option value="8">8 x de R$ 699,00</option>
+				  <option value="9">9 x de R$ 699,00</option>
+				  <option value="10">10 x de R$ 699,00</option>
+				  <option value="11">11 x de R$ 699,00</option>
+				  <option value="12">12 x de R$ 699,00</option>
+			</select>
 			</form>
 			</div>
 			<input id="continuar_bt" type="image" src="images/continuar_bt.png" width="275" height="40" onclick="TrocaForm()"/>
@@ -66,13 +107,39 @@
 			</div>
 			<div id="lista_compra" class="unidade" style="padding:0; padding-top:10px; padding-bottom:5px; width:300px; margin-top:8px;margin-bottom:8px;">
 			<div class="produto">
-			<img class="item" src="images/aparelho.jpg"/>
+			<img class="item_lista" src="images/aparelho.jpg"/>
+			<div class="azul negrito tam_12" style="padding:15px 25px 10px 80px;">Nokia Lumia 800 Câmera 8MP Carl Zeiss Windows Phone</div>
 			<div class="clear"></div>
+			<div class="caixa">
+			<div class="bloco">
+			<div class="azul tam_12 negrito" style="float:left">Valor Unit.</div><div class="preto tam_12 negrito">R$ 890,00</div>
+			<div class="clear"></div>
+			</div>
+			<div class="bloco impar">
+			<div class="azul tam_12 negrito" style="float:left">Qtde.</div><div class="preto tam_12 negrito">1</div>
+			<div class="clear"></div>
+			</div>	
+<div class="clear"></div>			
+			</div>
 			</div>
 			<div class="produto">
-			<img class="item" src="images/aparelho.jpg"/>
+			<img class="item_lista" src="images/aparelho.jpg"/>
+			<div class="azul negrito tam_12" style="padding:15px 25px 10px 80px;">Nokia Lumia 800 Câmera 8MP Carl Zeiss Windows Phone</div>
+			<div class="clear"></div>
+			<div class="caixa">
+			<div class="bloco">
+			<div class="azul tam_12 negrito" style="float:left">Valor Unit.</div><div class="preto tam_12 negrito">R$ 890,00</div>
 			<div class="clear"></div>
 			</div>
+			<div class="bloco impar">
+			<div class="azul tam_12 negrito" style="float:left">Qtde.</div><div class="preto tam_12 negrito">1</div>
+			<div class="clear"></div>
+			</div>		
+<div class="clear"></div>			
+			</div>
+			</div>
+			<div class="azul tam_12 negrito" style="float:left; padding:10px; padding-top:15px">Valor Total</div><div class="preto tam_12 negrito" style="float:right; padding:10px; padding-top:15px">R$ 1580,00</div>
+			<div class="clear"></div>
 			</div>
 		</div>
 		<div class="conteudo branco">

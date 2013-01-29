@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="home.css"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="menu.js"></script>
+	<script type="text/javascript" src="checkbox.js"></script>
+</head>
+<body>
+	<div id="container">
+	<div id="mask" onclick="FechaMenuFiltro()"></div>
+		<header>
+			<div id="mini-menu">
+				<div id="super-texto">
+					<p class="up_menu">Aparelhos</p>
+					<p class="up_menu">|</p>
+					<p class="up_menu">Lojas</p>
+					<p class="up_menu">|</p>
+					<p class="up_menu">Ligar</p>
+				</div>
+				<div id="super_busca">
+					<input type="text" id="busca" />
+					<div id="link"></div>
+				</div>
+				<div class="clear"></div>
+				<div id="logo">
+				</div>
+			</div>
+		</header>
+		<div class="conteudo bgazul bg_produtos">
+			<div id="topo" class="arredondado" style="margin-bottom:10px;">
+				<div class="topmenu2 azul negrito tam_12 ativo" style=" margin-right:10px;" id="identificacao">1 - Identificação</div>
+				<div class="topmenu2 preto negrito tam_12" id="entrega">2</div>
+				<div class="topmenu2 preto negrito tam_12" id="pagamento">3</div>
+				<div class="clear"></div>
+			</div>	
+			<div id="forms">
+			<div id="cabecalho" class="arredondado" style="padding: 10px; width: 280px; border-bottom:1px solid #848484">
+			<span class="preto negrito tam_12" id="titulo_form" > Dados Pessoais</span> 
+			</div>	
+			<div id="form" class="unidade" style="width:280px">
+			<div id="form_indent">
+			<form id="formulario">
+			<input type="text" name="nome" class="text" placeholder="Nome"/>
+			<input type="text" name="sobrenome" class="text" placeholder="Sobrenome"/>
+			<input type="text" name="cpf" class="text" placeholder="CPF"/>
+			<input type="text" name="telefone" class="text" placeholder="Telefone"/>
+			<input type="text" name="email" class="text" placeholder="Email" style="margin-bottom:10px"/>
+			</div>
+			<div id="form_entrega" style="display:none">
+			<input type="text" name="cep" class="text" placeholder="CEP"/>
+			<input type="text" name="endereco" class="text" placeholder="Endereço"/>
+			<input type="text" name="bairro" class="text" placeholder="Bairro"/>
+			<input type="text" name="cidade" class="text" placeholder="Cidade"/>
+			<input type="text" name="estado" class="text" placeholder="Estado" style="margin-bottom:10px"/>
+			</div>
+			<div id="form_pagamento" style="display:none">
+			<input type="text" name="nome" class="text" placeholder="Nome"/>
+			<input type="text" name="sobrenome" class="text" placeholder="Sobrenome"/>
+			<input type="text" name="cpf" class="text" placeholder="CPF"/>
+			<input type="text" name="telefone" class="text" placeholder="Telefone"/>
+			<input type="text" name="email" class="text" placeholder="Email" style="margin-bottom:10px"/>
+			</form>
+			</div>
+			<input id="continuar_bt" type="image" src="images/continuar_bt.png" width="275" height="40" onclick="TrocaForm()"/>
+			
+			</div>
+			<div id="lista_compra" class="unidade" style="padding:0; padding-top:10px; padding-bottom:5px; width:300px; margin-top:8px;margin-bottom:8px;">
+			<div class="produto">
+			<img class="item" src="images/aparelho.jpg"/>
+			<div class="clear"></div>
+			</div>
+			<div class="produto">
+			<img class="item" src="images/aparelho.jpg"/>
+			<div class="clear"></div>
+			</div>
+			</div>
+		</div>
+		<div class="conteudo branco">
+			<div id="footer">
+				<div class="links face"></div>
+				<div class="links twitter"></div>
+				<div class="links youtube"></div>
+				<div class="links plus"></div>
+			</div>
+			<div style="width:300px;margin-right:auto;margin-left:auto; text-align:center;padding-top:8px; line-height:90%;">
+				<span class="azul negrito" style="font-size:11px">Loja Online Nokia - 2013</span><br>
+				<span class="azul negrito" style="font-size:11px">Todos os direitos reservados</span>
+			</div>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,399 @@
+header{
+background:url('images/bg_cabecalho.png');
+background-repeat:no-repeat;
+background-size:100% 100%;
+width:100%;
+height:92px;
+position:absolute;
+top:-5px;
+z-index:4;
+}
+body{
+margin:0;
+margin-left:auto;
+margin-right:auto;
+background:#FFFFFF;
+}
+#container{
+width:100%;
+height:100%;
+}
+.up_menu{
+float:left;
+color:#FFFFFF;
+font-weight: 700; 
+margin-right:8px;
+font-family: 'Gudea', sans-serif;
+font-size:12px;
+}
+#mini-menu{
+margin-left:auto;
+margin-right:auto;
+width:320px;
+vertical-align:middle;
+}
+#super_busca{
+background:url('images/bg_busca.png');
+background-repeat:no-repeat;
+margin-top:5px;
+width:139px;
+height:45px;
+background-size:100% 100%;
+float:right;
+}
+#super-texto{
+margin-top:5px;
+width:170px;
+height:45px;
+float:left;
+}
+#busca{
+background:url('images/caixa_busca.png');
+background-repeat:no-repeat;
+width:101px;
+height:36px;
+padding-left:7px;
+padding-right:28px;
+color:#000000;
+border:none;
+background-size:100% 100%;
+float:left;
+}
+#logo{
+background:url('images/logo.png');
+width:91px;
+height:17px;
+background-repeat:no-repeat;
+background-size:100% 100%;
+margin-left:auto;
+margin-right:auto;
+margin-top:8px;
+}
+.clear{
+clear:both;
+}
+#link{
+width:28px;
+height:28px;
+background:transparent;
+float:right;
+margin-top: -34px;
+margin-right: 5px;
+}
+.conteudo{
+width:100%;
+border:1px solid #000000;
+padding: 5px 0 5px 0;
+}
+.cinza{
+background:#dcdcdc;
+}
+#propaganda{
+background:url('images/propaganda.png');
+width:320px;
+height:203px;
+background-repeat:no-repeat;
+background-size:100% 100%;
+margin-right:auto;
+margin-left:auto;
+}
+#frete{
+width:320px;
+margin-right:auto;
+margin-left:auto;
+font-family: 'Gudea', sans-serif;
+font-weight:700;
+text-align:center;
+}
+.verde{
+color:#65b25e;
+}
+.azul{
+color:#3d598d;
+}
+.grande{
+font-size: 16px;
+}
+.medio{
+font-size:14px;
+}
+.bgazul{
+background:#012d58;
+padding-bottom:5px;
+}
+.unidade{
+background:#FFFFFF;
+width:290px;
+border-bottom:1px solid #848484;
+margin-right:auto;
+margin-left:auto;
+padding: 10px 5px 5px 15px; 
+}
+.item{
+float:left;
+margin-right:10px;
+}
+.negrito{
+font-family: 'Gudea', sans-serif;
+font-weight:700;
+}
+.comum{
+font-family: 'Gudea', sans-serif;
+font-weight:200;
+}
+.verde_escuro{
+color:#008300;
+}
+.desconto{
+background:url('images/bg_desconto.png');
+background-size: 100% 100%;
+width:110px;
+float:left;
+margin-top:5px;
+padding-left:10px;
+height:25px;
+}
+.comprar{
+background:url('images/comprar_bt.png');
+background-size:100% 100%;
+margin-top:2px;
+width:107px;
+height:41px;
+float:left;
+margin-left:7px;
+}
+#menu{
+background:url('images/menu.jpg');
+width: 306px;
+height: 38px;
+margin-top:8px;
+position:absolute;
+z-index:2;
+}
+#super_menu{
+width:306px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:50px;
+}
+#termos{
+background:url('images/bg_termos.png');
+padding: 15px 15px 15px 15px;
+width: 276px;
+margin-left:auto;
+margin-right:auto;
+height: 38px;
+margin-top:8px;
+}
+#footer{
+background:url('images/reiscos.png');
+width:306px;
+margin-right:auto;
+margin-left:auto;
+height:234px;
+}
+.branco{
+background:#FFFFFF;
+}
+.links{
+margin-top:195px;
+width:30px;
+height:30px;
+background:transparent;
+float:left;
+}
+.face{
+margin-left:7px;
+}
+.twitter{
+margin-left:5px;
+}
+.youtube{
+margin-left:7px;
+}
+.plus{
+margin-left:3px;
+}
+#menu_content{
+background:#FFFFFF;
+width:306px;
+margin-left:auto;
+margin-right:auto;
+display:none;
+position:absolute;
+z-index:2;
+
+padding-bottom:5px;
+}
+.menu_home #menu_content{
+top:546px;
+}
+.menu_produto #menu_content{
+top:350px;
+}
+
+.submenu{
+border-bottom: 1px solid #000000;
+padding:5px 5px 5px 5px;
+line-height:160%;
+}
+.tam_12{
+font-size:12px;
+}
+.tam_13{
+font-size:13px;
+}
+.tam_15{
+font-size:15px;
+}
+.checkbox, .radio {
+  width: 19px;
+  height: 23px;
+  padding: 0 5px 0 0;
+  background: url(images/checkbox.png) no-repeat;
+  display: block;
+  margin-right:10px;
+  clear: left;
+  float: left;
+}
+#mask{
+background:url('images/bg_mask.png');
+background-repeat:repeat;
+width:100%;
+height:100%;
+position:absolute;
+z-index:2;
+top:0;
+left:0;
+display:none;
+}
+.bgpreto{
+padding:0;
+background:#000000;
+margin-top:80px;
+}
+#bt_buscar{
+background:url('images/buscar_bt.png');
+width:288px;
+height:43px;
+background-size:100% 100%;
+margin-left:auto;
+margin-top:5px;
+margin-right:auto;
+}
+.titulo{
+margin-right:auto;
+ margin-left:auto;
+ width:320px;
+ text-align:center;
+ }
+ .arredondado {
+ width:290px;
+ padding-left:5px;
+ padding-bottom:5px;
+ margin-left:auto;
+ margin-right:auto;
+ border: solid 0px #012d58;
+  border-top-right-radius: 0.3em;
+ border-top-left-radius: 0.3em; 
+ margin-bottom:-5px;
+ }
+ #topo{
+ background:url('images/bg_listaproduto_top.jpg');
+ background-size:100% 100%;
+  padding-left:5px;
+ padding-right:5px;
+ }
+ #cabecalho{
+ background:url('images/bg_listaproduto_top.jpg');
+ background-size:100% 100%;
+  padding-left:5px;
+ padding-right:5px;
+ }
+ .topmenu{
+ float:left;
+ width:140px;
+ height:30px;
+text-align:center;
+padding-top:16px;
+ }
+ .topmenu2{
+ float:left;
+ width:70px;
+ height:30px;
+text-align:center;
+padding-top:16px;
+ }
+ .ativo{
+  background:url('images/bg_selecionado.png');
+  background-size:100% 100%;
+  width:140px;
+  }
+ .filtro{
+ width:280px;
+ margin-left:auto;
+ margin-right:auto;
+ background:#FFFFFF;
+ border-bottom: 1px solid #848484;
+ border-top: 1px solid #848484;
+ padding:5px;
+ padding-left:15px;
+ }
+ #filtro_bt{
+ background:url('images/filtra_bt.png');
+ float:right;
+ width:74px;
+ height:40px;
+ }
+ .bg_produtos{
+ margin-top:80px;
+ }
+ .menu_filtro{
+ margin-right:auto;
+ margin-left:auto;
+ position:absolute;
+ top:-105px;
+ width:300px;
+ background:#FFFFFF;
+  border: solid 1px #b2b2b2;
+ border-radius: 0.3em; 
+ z-index:3;
+ }
+ .submenu_filtro{
+ border-top:1px solid #848484;
+ padding:15px;
+ }
+ .central{
+ width:300px;
+ margin-left:auto;
+ margin-right:auto;
+ }
+ .seta{
+ float:right;
+ background:url('images/setinha.png');
+ width:15px;
+ height:14px;
+ }
+ .cinza{
+ color:#5b5b5b;
+ }
+ .select{
+ float:right;
+ margin-top:9px
+ }
+ .text{
+ border-radius: 0.3em; 
+ padding:2px;
+ border:1px solid #8f8f8f;
+ width:270px;
+ margin-left:auto;
+ margin-right:auto;
+ color:#8f8f8f;
+ margin-bottom:5px;
+ }
+ .produto{
+ border-bottom: solid 1px #000000;
+ padding-top:5px;
+ padding-bottom:5px;
+ width:100%;
+ }

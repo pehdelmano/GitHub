@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="home.css"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="menu.js"></script>
+	<script type="text/javascript" src="checkbox.js"></script>
+</head>
+<body>
+	<div id="container">
+	<div id="mask"></div>
+		<header>
+			<div id="mini-menu">
+				<div id="super-texto">
+					<p class="up_menu">Aparelhos</p>
+					<p class="up_menu">|</p>
+					<p class="up_menu">Lojas</p>
+					<p class="up_menu">|</p>
+					<p class="up_menu">Ligar</p>
+				</div>
+				<div id="super_busca">
+					<input type="text" id="busca" />
+					<div id="link"></div>
+				</div>
+				<div class="clear"></div>
+				<div id="logo">
+				</div>
+			</div>
+		</header>
+		<div class="conteudo bgpreto">
+		<div id="propaganda">
+		</div>
+		</div>
+		<div class="conteudo cinza">
+			<div id="frete">
+			<div style="width:240px;  margin-right:auto; margin-left:auto">
+			<p class="verde grande" style="float:left; margin-right:10px;">FRETE GRÁTIS</p> <p class="azul medio" style="float:left;margin-top: 18px;">em toda loja</p>
+			</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="conteudo bgazul">
+			<div class="unidade">
+			<img class="item" src="images/aparelho.jpg" />
+			<div class="texto-item" style="line-height:90%">
+				<span class="azul negrito" style="font-size:14px">Nokia Lumia 800 Câmera 8MP Carl Zeiss Windows Phone</span><br>
+				<span class="preto comum tam_12" >de <strike>R$ <span id="valor_antigo">1699,00</span></strike></span><br>
+				<span class="preto comum tam_12" >por R$ <span id="valor_atual" class="verde_escuro negrito" style="font-size:20px;line-height:120%;">1399,00</span></span><br>
+				<span class="preto comum tam_12" >ou 12X de <span id="parcela_atual">116,58</span> sem juros</span>
+			</div>
+			<div class="desconto">
+				<span class="preto comum" style="font-size:11px">Desconto de R$ <span id="desconto">300</span></span>
+			</div>
+			<div class="comprar"></div>
+			<div class="clear"></div>
+			</div>
+			<div id="super_menu" class="menu_home">
+				<div id="menu" onclick="AbreMenu()">
+				</div>	
+				<div id="menu_content">
+				<form id="busca_menu">
+					<div class="submenu">
+						<span class="azul negrito tam_15">Sistema Operacional</span><br>
+						<input type="checkbox" name="sistema" value="windows" class="styled"><span id="windows" class="tam_13 negrito">Windows Phone</span><br>
+						<input type="checkbox" name="sistema" value="symbian" class="styled"><span id="symbian" class="tam_13 negrito">Symbian</span><br>
+						<input type="checkbox" name="sistema" value="nokisos" class="styled"><span id="nokisos" class="tam_13 negrito">Nokia OS</span><br>
+						<div class="clear"></div>
+					</div>
+					<div class="submenu">
+						<span class="azul negrito tam_15">Câmera</span><br>
+						<input type="checkbox" name="camera" value="1" class="styled"><span id="8MP" class="tam_13 negrito">Acima de 8 megapixels</span><br>
+						<input type="checkbox" name="camera" value="2" class="styled"><span id="5MP" class="tam_13 negrito">De 5.0 a 8.0 MP</span><br>
+						<input type="checkbox" name="camera" value="3" class="styled"><span id="3MP" class="tam_13 negrito">De 3.0 a 5.0 MP</span><br>
+						<input type="checkbox" name="camera" value="4" class="styled"><span id="2MP" class="tam_13 negrito">Até 2.0 MP</span><br>
+						<div class="clear"></div>
+					</div>
+					<div class="submenu">
+						<span class="azul negrito tam_15">Conexão</span><br>
+						<input type="checkbox" name="conexao" value="1" class="styled"><span id="bluetooth" class="tam_13 negrito">Bluetooth</span><br>
+						<input type="checkbox" name="conexao" value="2" class="styled"><span id="gps" class="tam_13 negrito">GPS</span><br>
+						<input type="checkbox" name="conexao" value="3" class="styled"><span id="wifi" class="tam_13 negrito">Wi-Fi</span><br>
+						<input type="checkbox" name="conexao" value="4" class="styled"><span id="3g" class="tam_13 negrito">3G</span><br>
+						<div class="clear"></div>
+					</div>
+					<div class="submenu">
+						<span class="azul negrito tam_15">Formato</span><br>
+						<input type="checkbox" name="formato" value="1" class="styled"><span id="barra" class="tam_13 negrito">Barra</span><br>
+						<input type="checkbox" name="formato" value="2" class="styled"><span id="flip" class="tam_13 negrito">Flip</span><br>
+						<input type="checkbox" name="formato" value="3" class="styled"><span id="qwerty" class="tam_13 negrito">Smartphone - Qwerty</span><br>
+						<input type="checkbox" name="formato" value="4" class="styled"><span id="touch" class="tam_13 negrito">Touchscreen</span><br>
+						<div class="clear"></div>
+					</div>
+					<div class="submenu">
+						<span class="azul negrito tam_15">Música</span><br>
+						<input type="checkbox" name="musica" value="1" class="styled"><span id="acima_16" class="tam_13 negrito">Music Player acima de 16GB</span><br>
+						<input type="checkbox" name="musica" value="2" class="styled"><span id="payer_16" class="tam_13 negrito">Music Player de 8GB a 16GB</span><br>
+						<input type="checkbox" name="musica" value="3" class="styled"><span id="player_4" class="tam_13 negrito">Music Player ate 4GB</span><br>
+						<input type="checkbox" name="musica" value="4" class="styled"><span id="radio" class="tam_13 negrito">Radio FM</span><br>
+						<div class="clear"></div>
+					</div>
+					<div class="submenu">
+						<span class="azul negrito tam_15">Por preço</span><br>
+						<input type="checkbox" name="preco" value="1" class="styled"><span id="baratos" class="tam_13 negrito">Mais Baratos</span><br>
+						<input type="checkbox" name="preco" value="2" class="styled"><span id="acima_300" class="tam_13 negrito">De R$ 300,00 ate R$ 700,00</span><br>
+						<input type="checkbox" name="preco" value="3" class="styled"><span id="acima_700" class="tam_13 negrito">Acima de R$ 700,00</span><br>
+						<input type="checkbox" name="preco" value="4" class="styled"><span id="top" class="tam_13 negrito">Top de Linha</span><br>
+						<div class="clear"></div>
+					</div>
+					<div id="bt_buscar"></div>
+				</form>	
+				</div>
+			</div>
+			
+			<div id="termos">
+			<span class="azul comum tam_15" style="float:left;">Sobre a Loja<br>Online Nokia</span>
+			<span class="azul comum tam_15" style="float:left; margin-left:18px;">Politica de<br>privacidade</span>
+			<span class="azul comum tam_15" style="float:left; margin-left:27px;">Termos de <br>uso da loja</span>
+			<div class="clear"></div>
+			</div>
+		</div>
+		<div class="conteudo branco">
+			<div id="footer">
+				<div class="links face"></div>
+				<div class="links twitter"></div>
+				<div class="links youtube"></div>
+				<div class="links plus"></div>
+			</div>
+			<div style="width:300px;margin-right:auto;margin-left:auto; text-align:center;padding-top:8px; line-height:90%;">
+				<span class="azul negrito" style="font-size:11px">Loja Online Nokia - 2013</span><br>
+				<span class="azul negrito" style="font-size:11px">Todos os direitos reservados</span>
+			</div>
+		</div>
+	</div>
+</body>

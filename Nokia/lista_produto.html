@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="home.css"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="menu.js"></script>
+	<script type="text/javascript" src="checkbox.js"></script>
+</head>
+<body>
+	<div id="container">
+	<div class="central">
+		<div class="menu_filtro">
+		<div class="submenu_filtro tam_12 preto negrito">Todos os aparelhos<div class="seta"></div></div><div class="clear"></div>
+		<div class="submenu_filtro tam_12 preto negrito">Por preço<div class="seta"></div></div><div class="clear"></div>
+		<div class="submenu_filtro tam_12 preto negrito">Por funcionalidade<div class="seta"></div></div><div class="clear"></div>
+		<div class="submenu_filtro tam_12 preto negrito">Acessórios<div class="seta"></div></div><div class="clear"></div>
+	</div>
+	</div>
+	<div id="mask" onclick="FechaMenuFiltro()"></div>
+		<header>
+			<div id="mini-menu">
+				<div id="super-texto">
+					<p class="up_menu">Aparelhos</p>
+					<p class="up_menu">|</p>
+					<p class="up_menu">Lojas</p>
+					<p class="up_menu">|</p>
+					<p class="up_menu">Ligar</p>
+				</div>
+				<div id="super_busca">
+					<input type="text" id="busca" />
+					<div id="link"></div>
+				</div>
+				<div class="clear"></div>
+				<div id="logo">
+				</div>
+			</div>
+		</header>
+		<div class="conteudo bgazul bg_produtos">
+			<div id="topo" class="arredondado">
+				<div class="topmenu azul negrito tam_12 ativo" style=" margin-right:10px;" id="aparelhos">Aparelhos</div>
+				<div class="topmenu preto negrito tam_12" id="acessorios">Acessórios</div>
+				<div class="clear"></div>
+			</div>
+			<div class="azul tam_12 negrito filtro"><div id="texto_produto" style="margin-top:12px;float:left;">Todos os aparelhos</div><div id="filtro_bt" onclick="AbreMenuFiltro()"></div>
+			<div class="clear"></div>	
+			</div>
+			<div class="cinza tam_12 negrito filtro" style="padding-bottom:15px; margin-bottom:5px;"><div id="texto_produto" style="margin-top:12px;float:left;">Ordenar por:</div>
+				<select name="ordena" class="tam_12 negrito select">
+				  <option value="1">Menor Preço</option>
+				  <option value="2">Funcionalidade</option>
+				  <option value="3">X</option>
+				</select>
+			<div class="clear"></div>	
+			</div>		
+			<div class="unidade">
+			<img class="item" src="images/aparelho.jpg" />
+			<div class="texto-item" style="line-height:90%">
+				<span class="azul negrito" style="font-size:14px">Nokia Lumia 800 Câmera 8MP Carl Zeiss Windows Phone</span><br>
+				<span class="preto comum tam_12" >de <strike>R$ <span id="valor_antigo">1699,00</span></strike></span><br>
+				<span class="preto comum tam_12" >por R$ <span id="valor_atual" class="verde_escuro negrito" style="font-size:20px;line-height:120%;">1399,00</span></span><br>
+				<span class="preto comum tam_12" >ou 12X de <span id="parcela_atual">116,58</span> sem juros</span>
+			</div>
+			<div class="desconto">
+				<span class="preto comum" style="font-size:11px">Desconto de R$ <span id="desconto">300</span></span>
+			</div>
+			<div class="comprar"></div>
+			<div class="clear"></div>
+			</div>
+<div class="unidade">
+			<img class="item" src="images/aparelho.jpg" />
+			<div class="texto-item" style="line-height:90%">
+				<span class="azul negrito" style="font-size:14px">Nokia Lumia 800 Câmera 8MP Carl Zeiss Windows Phone</span><br>
+				<span class="preto comum tam_12" >de <strike>R$ <span id="valor_antigo">1699,00</span></strike></span><br>
+				<span class="preto comum tam_12" >por R$ <span id="valor_atual" class="verde_escuro negrito" style="font-size:20px;line-height:120%;">1399,00</span></span><br>
+				<span class="preto comum tam_12" >ou 12X de <span id="parcela_atual">116,58</span> sem juros</span>
+			</div>
+			<div class="desconto">
+				<span class="preto comum" style="font-size:11px">Desconto de R$ <span id="desconto">300</span></span>
+			</div>
+			<div class="comprar"></div>
+			<div class="clear"></div>
+			</div>	
+<div class="unidade">
+			<img class="item" src="images/aparelho.jpg" />
+			<div class="texto-item" style="line-height:90%">
+				<span class="azul negrito" style="font-size:14px">Nokia Lumia 800 Câmera 8MP Carl Zeiss Windows Phone</span><br>
+				<span class="preto comum tam_12" >de <strike>R$ <span id="valor_antigo">1699,00</span></strike></span><br>
+				<span class="preto comum tam_12" >por R$ <span id="valor_atual" class="verde_escuro negrito" style="font-size:20px;line-height:120%;">1399,00</span></span><br>
+				<span class="preto comum tam_12" >ou 12X de <span id="parcela_atual">116,58</span> sem juros</span>
+			</div>
+			<div class="desconto">
+				<span class="preto comum" style="font-size:11px">Desconto de R$ <span id="desconto">300</span></span>
+			</div>
+			<div class="comprar"></div>
+			<div class="clear"></div>
+			</div>				
+			<div id="termos">
+			<span class="azul comum tam_15" style="float:left;">Sobre a Loja<br>Online Nokia</span>
+			<span class="azul comum tam_15" style="float:left; margin-left:18px;">Politica de<br>privacidade</span>
+			<span class="azul comum tam_15" style="float:left; margin-left:27px;">Termos de <br>uso da loja</span>
+			<div class="clear"></div>
+			</div>
+		</div>
+		<div class="conteudo branco">
+			<div id="footer">
+				<div class="links face"></div>
+				<div class="links twitter"></div>
+				<div class="links youtube"></div>
+				<div class="links plus"></div>
+			</div>
+			<div style="width:300px;margin-right:auto;margin-left:auto; text-align:center;padding-top:8px; line-height:90%;">
+				<span class="azul negrito" style="font-size:11px">Loja Online Nokia - 2013</span><br>
+				<span class="azul negrito" style="font-size:11px">Todos os direitos reservados</span>
+			</div>
+		</div>
+	</div>
+</body>
